@@ -34,7 +34,7 @@ const Title = styled.h1`
   padding: 0;
   font-size: 50px;
   font-family: "Coda Caption", sans-serif;
-  color: #f3e4d4;
+  color: #2b2b2b;
 `;
 
 const Subtitle = styled.h2`
@@ -42,7 +42,7 @@ const Subtitle = styled.h2`
   padding: 0;
   font-size: 20px;
   font-family: "Coda Caption", sans-serif;
-  color: #f3e4d4;
+  color: #2b2b2b;
 `;
 
 const Description = styled.p`
@@ -50,8 +50,7 @@ const Description = styled.p`
   padding: 0;
   font-size: 14px;
   font-family: "Coda Caption", sans-serif;
-  color: #bfc979;
-  -webkit-text-stroke: 0.5px #2b2b2b;
+  color: #f3e4d4;
 `;
 
 export default HomepageTitle;
