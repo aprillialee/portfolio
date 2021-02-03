@@ -12,8 +12,8 @@ function Background() {
       <Suspense fallback={null}>
         <PointerLockControls
           isLocked={true}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI}
+          maxPolarAngle={Math.PI / 2.8}
+          minPolarAngle={Math.PI / 2.5}
         />
         <Sphere />
       </Suspense>
