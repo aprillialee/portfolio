@@ -2,7 +2,7 @@ import { BackSide } from "three";
 
 import * as THREE from "three";
 
-import { useLoader } from "react-three-fiber";
+import { useLoader, useFrame } from "react-three-fiber";
 
 function Sphere() {
   const texture = useLoader(THREE.TextureLoader, "/confetti.jpg");
