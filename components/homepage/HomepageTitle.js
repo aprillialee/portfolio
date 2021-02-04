@@ -21,11 +21,15 @@ const HomepageTitleStyled = styled.div`
   bottom: 0;
   margin-bottom: 20px;
   margin-left: 50px;
-  width: 29%;
+  width: 380px;
   height: 200px;
 
-  @media (max-width: 1040px) {
-    width: 90%;
+  @media (max-width: 1070px) {
+    width: 40%;
+  }
+
+  @media (max-width: 768px) {
+    width: 75%;
   }
 `;
 
