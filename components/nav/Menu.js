@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
+import Burger from "./Burger";
+
 function Menu() {
   return (
     <MenuStyled>
-      <h1>HELLO</h1>
+      <Burger />
     </MenuStyled>
   );
 }
 
 const MenuStyled = styled.div`
   position: absolute;
-  background: #200f59;
-  width: 80px;
+  width: 100px;
   height: 400px;
   right: 0;
   top: 0;
