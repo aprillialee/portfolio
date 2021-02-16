@@ -1,5 +1,7 @@
 import { Canvas } from "react-three-fiber";
 
+import { useState } from "react";
+
 import Sphere from "./Sphere";
 
 import { Suspense } from "react";
