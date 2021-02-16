@@ -1,19 +1,24 @@
 import styled from "styled-components";
 
+import MenuOptions from "./MenuOptions";
+
 import { useState } from "react";
 
 function Burger() {
   const [open, setOpen] = useState(false);
   return (
-    <BurgerStyled
-      open={open}
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-    >
-      <div />
-      <div />
-      <div />
-    </BurgerStyled>
+    <>
+      <BurgerStyled
+        open={open}
+        onMouseEnter={() => setOpen(true)}
+        onMouseLeave={() => setOpen(false)}
+      >
+        <div />
+        <div />
+        <div />
+        <MenuOptions open={open} />
+      </BurgerStyled>
+    </>
   );
 }
 
@@ -23,7 +28,7 @@ const BurgerStyled = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100px;
+  height: 100%;
   background: ${({ open }) => (open ? "#200f59" : "")};
 
   div {
@@ -35,14 +40,8 @@ const BurgerStyled = styled.div`
     border: 1px solid #200f59;
   }
 
-  div:nth-child(1) {
-  }
-
   div:nth-child(2) {
     transform: ${({ open }) => (open ? "translateX(8px)" : "translateX(0)")};
-  }
-
-  div:nth-child(3) {
   }
 `;
 
