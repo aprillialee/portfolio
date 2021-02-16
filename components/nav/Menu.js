@@ -13,7 +13,7 @@ function Menu() {
 const MenuStyled = styled.div`
   position: absolute;
   width: 100px;
-  height: 400px;
+  height: 100%;
   right: 0;
   top: 0;
 `;
