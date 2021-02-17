@@ -67,6 +67,7 @@ function MenuOptions({ open }) {
           height="25"
           fill="white"
           viewBox="0 0 511.626 511.627"
+          strokeWidth="10"
         >
           <g>
             <path
@@ -125,7 +126,7 @@ function MenuOptions({ open }) {
             height="11.8"
             rx="3.4"
             stroke="white"
-            stroke-width="1.2"
+            strokeWidth="1.2"
           />
           <circle cx="6.5" cy="6.5" r="3" stroke="white" />
           <circle cx="9.75" cy="2.75" r="0.75" fill="white" />
