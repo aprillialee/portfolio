@@ -19,7 +19,6 @@ export default function Home() {
     <>
       {hasMounted && <Background />}
       <HomepageTitle />
-      <Menu />
     </>
   );
 }
