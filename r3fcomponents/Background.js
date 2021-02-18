@@ -1,6 +1,8 @@
 import { Canvas } from "react-three-fiber";
 
-import { useState } from "react";
+import styled from "styled-components";
+
+import AnimationLoader from "../components/AnimationLoader";
 
 import Sphere from "./Sphere";
 
@@ -22,5 +24,7 @@ function Background() {
     </Canvas>
   );
 }
+
+const Loading = styled.div``;
 
 export default Background;
