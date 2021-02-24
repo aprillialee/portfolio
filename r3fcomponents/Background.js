@@ -2,8 +2,6 @@ import { Canvas } from "react-three-fiber";
 
 import styled from "styled-components";
 
-import AnimationLoader from "../components/AnimationLoader";
-
 import Sphere from "./Sphere";
 
 import { Suspense } from "react";

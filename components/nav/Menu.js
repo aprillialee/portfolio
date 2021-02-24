@@ -16,5 +16,6 @@ const MenuStyled = styled.div`
   height: 100%;
   right: 0;
   top: 0;
+  z-index: 2;
 `;
 export default Menu;

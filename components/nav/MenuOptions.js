@@ -161,8 +161,8 @@ const MenuOptionsStyled = styled.ul`
 `;
 
 const MenuOption = styled.li`
+  height: 80px;
   width: 100px;
-  margin-bottom: 50px;
   cursor: pointer;
 `;
 
