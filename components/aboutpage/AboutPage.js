@@ -4,7 +4,11 @@ function AboutPage() {
   return (
     <AboutPageStyled>
       <AboutMe>About Me</AboutMe>
-      <Paragraph1>Some spiel here</Paragraph1>
+      <Paragraph>Hello, I'm Aprillia and I'm a front-end developer.</Paragraph>
+      <Paragraph>
+        While I spend most of my time working with React, I also enjoy design,
+        writing, 3D programming/modelling and AWS.
+      </Paragraph>
     </AboutPageStyled>
   );
 }
@@ -15,7 +19,7 @@ const AboutPageStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 90%;
+  width: 60%;
   height: 80%;
   padding: 40px;
 `;
@@ -27,11 +31,10 @@ const AboutMe = styled.h1`
   margin: 0;
 `;
 
-const Paragraph1 = styled.p`
-  margin: 0;
-  font-size: 18px;
+const Paragraph = styled.p`
+  margin: 7px 0px 0px 0px;
+  font-size: 20px;
   color: #f3e4d4;
-  font-weight: 400;
   font-family: "Coda", sans-serif;
 `;
 

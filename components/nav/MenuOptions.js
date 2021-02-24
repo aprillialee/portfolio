@@ -63,7 +63,7 @@ function MenuOptions({ open }) {
           </svg>
         </MenuOption>
       </Link>
-      <Link href="/blog">
+      <Link href="https://medium.com/@aprillialee" passHref={true}>
         <MenuOption>
           <svg
             version="1.1"

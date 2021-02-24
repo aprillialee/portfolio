@@ -23,9 +23,10 @@ function MyApp({ Component, pageProps }) {
       <Menu />
       <Banner>
         <Skills>
-          • Press Esc to Get Your Cursor Back! • Made With React-Three-Fiber,
-          ThreeJS, React, Styled Components • Press Esc to Get Your Cursor Back!
-          • Made With React-Three-Fiber, ThreeJS, React, Styled Components
+          • Press Esc to Get Your Cursor Back! • Made With NextJS, React,
+          React-Three-Fiber, ThreeJS, Styled Components • Press Esc to Get Your
+          Cursor Back! • Made With NextJS, React, React-Three-Fiber, ThreeJS,
+          Styled Components
         </Skills>
       </Banner>
     </>
@@ -57,7 +58,7 @@ const Skills = styled.p`
   font-family: "Coda", sans-serif;
   animation: floatText 35s infinite linear;
   padding-left: 100%;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 
   @keyframes floatText {
     to {
