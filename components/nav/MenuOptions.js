@@ -153,11 +153,10 @@ function MenuOptions({ open }) {
 
 const MenuOptionsStyled = styled.ul`
   width: 100px;
-  height: 500px;
-  padding-top: 30px;
+  height: 100vh;
   background: #200f59;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   list-style: none;
+  display: ${({ open }) => (open ? "" : "none")};
 `;
 
 const MenuOption = styled.li`

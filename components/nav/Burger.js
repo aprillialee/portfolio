@@ -14,9 +14,11 @@ function Burger() {
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
-        <div />
-        <div />
-        <div />
+        <DIVS>
+          <div />
+          <div />
+          <div />
+        </DIVS>
         <MenuOptions open={open} />
       </BurgerStyled>
     </>
@@ -29,8 +31,11 @@ const BurgerStyled = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
   background: ${({ open }) => (open ? "#200f59" : "")};
+`;
+
+const DIVS = styled.div`
+  margin-top: 40px;
 
   div {
     margin-bottom: 5px;
