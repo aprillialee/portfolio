@@ -10,6 +10,7 @@ function Burger() {
     <>
       <BurgerStyled
         open={open}
+        onClick={() => setOpen(!open)}
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
