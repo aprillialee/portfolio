@@ -42,7 +42,7 @@ function AboutPage() {
       </SkillList>
       <Paragraph>
         Feel free to reach out to me or take a look at my
-        <a href="https://www.instagram.com/aprillialee" passHref={true}>
+        <a href="https://www.instagram.com/aprillialee">
           <b> Instagram</b>
         </a>
         ,

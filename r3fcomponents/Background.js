@@ -6,7 +6,7 @@ import Sphere from "./Sphere";
 
 import { Suspense } from "react";
 
-import { PointerLockControls } from "@react-three/drei";
+import { OrbitControls, PointerLockControls } from "@react-three/drei";
 
 function Background() {
   return (
