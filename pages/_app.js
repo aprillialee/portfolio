@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => setHasMounted(true), []);
   return (
     <>
-      {hasMounted && <Background />}
+      <ShowOnDesktop>{hasMounted && <Background />}</ShowOnDesktop>
       <Component {...pageProps} />
       <Menu />
       <Banner>
@@ -66,6 +66,12 @@ const Skills = styled.p`
     }
   }
 
+  @media (max-width: 1040px) {
+    display: none;
+  }
+`;
+
+const ShowOnDesktop = styled.div`
   @media (max-width: 1040px) {
     display: none;
   }

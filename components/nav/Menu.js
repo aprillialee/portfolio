@@ -17,5 +17,9 @@ const MenuStyled = styled.div`
   right: 0;
   top: 0;
   z-index: 2;
+
+  @media (max-width: 1040px) {
+    height: 100%;
+  }
 `;
 export default Menu;
