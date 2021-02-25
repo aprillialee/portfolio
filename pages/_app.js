@@ -23,10 +23,9 @@ function MyApp({ Component, pageProps }) {
       <Menu />
       <Banner>
         <Skills>
-          • Press Esc to Get Your Cursor Back! • Made With NextJS, React,
-          React-Three-Fiber, ThreeJS, Styled Components • Press Esc to Get Your
-          Cursor Back! • Made With NextJS, React, React-Three-Fiber, ThreeJS,
-          Styled Components
+          • Try Dragging The Sphere • Try Zooming In And Out • Made With NextJS,
+          React, React-Three-Fiber, ThreeJS, Styled Components • Try Dragging
+          The Sphere • Try Zooming In And Out
         </Skills>
       </Banner>
     </>

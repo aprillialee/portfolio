@@ -11,7 +11,7 @@ function Menu() {
 }
 
 const MenuStyled = styled.div`
-  position: absolute;
+  position: fixed;
   width: 100px;
   height: 100vh;
   right: 0;

@@ -95,7 +95,7 @@ const SkillsTitle = styled.h2`
 const SkillList = styled.ul`
   display: flex;
   flex-flow: row wrap;
-  height: 100%;
+  height: 300px;
   width: 100%;
   margin-bottom: 0;
 `;
@@ -107,7 +107,7 @@ const Skill = styled.li`
   font-family: "Coda", sans-serif;
 
   @media (max-width: 1040px) {
-    margin: 5px 30px 0px 0px;
+    margin: 0px 30px 0px 0px;
     font-size: 15px;
   }
 `;
