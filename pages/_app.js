@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => setHasMounted(true), []);
   return (
     <>
-      <ShowOnDesktop>{hasMounted && <Background />}</ShowOnDesktop>
+      {hasMounted && <Background />}
       <Component {...pageProps} />
       <Menu />
       <Banner>

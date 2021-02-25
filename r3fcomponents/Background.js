@@ -12,11 +12,12 @@ function Background() {
   return (
     <Canvas>
       <Suspense fallback={null}>
-        <PointerLockControls
+        {/*         <PointerLockControls
           isLocked={true}
           maxPolarAngle={Math.PI / 2.8}
           minPolarAngle={Math.PI / 2.5}
-        />
+        /> */}
+        <OrbitControls zoomEnabled={false} />
         <Sphere />
       </Suspense>
     </Canvas>

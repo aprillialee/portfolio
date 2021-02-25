@@ -47,7 +47,6 @@ const DIVS = styled.div`
   }
 
   div:nth-child(2) {
-    transform: ${({ open }) => (open ? "translateX(8px)" : "translateX(0)")};
   }
 `;
 

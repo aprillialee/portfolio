@@ -40,7 +40,7 @@ function AboutPage() {
         <Skill>Figma</Skill>
         <Skill>Inkscape</Skill>
       </SkillList>
-      <Paragraph>
+      <ReachOut>
         Feel free to reach out to me or take a look at my
         <a href="https://www.instagram.com/aprillialee">
           <b> Instagram</b>
@@ -57,7 +57,7 @@ function AboutPage() {
         <a href="https://medium.com/@aprillialee">
           <b> Medium</b>
         </a>
-      </Paragraph>
+      </ReachOut>
     </AboutPageStyled>
   );
 }
@@ -97,6 +97,7 @@ const SkillList = styled.ul`
   flex-flow: row wrap;
   height: 100%;
   width: 100%;
+  margin-bottom: 0;
 `;
 
 const Skill = styled.li`
@@ -112,7 +113,20 @@ const Skill = styled.li`
 `;
 
 const Paragraph = styled.p`
-  margin: 15px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
+  font-size: 18px;
+  color: #f3e4d4;
+  font-family: "Coda", sans-serif;
+  -webkit-text-stroke: 1px white;
+
+  @media (max-width: 1040px) {
+    margin: 5px 0px 0px 0px;
+    font-size: 15px;
+  }
+`;
+
+const ReachOut = styled.p`
+  margin: 0;
   font-size: 18px;
   color: #f3e4d4;
   font-family: "Coda", sans-serif;

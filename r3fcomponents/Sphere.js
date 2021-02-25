@@ -8,7 +8,7 @@ function Sphere() {
   const texture = useLoader(THREE.TextureLoader, "/confetti.jpg");
   return (
     <mesh>
-      <sphereGeometry attach="geometry" args={[10, 5, 5]} />
+      <sphereGeometry attach="geometry" args={[2, 10, 10]} />
       <meshBasicMaterial map={texture} side={BackSide} />
     </mesh>
   );
