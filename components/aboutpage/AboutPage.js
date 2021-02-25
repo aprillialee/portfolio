@@ -69,7 +69,7 @@ const AboutPageStyled = styled.div`
   flex-direction: column;
   align-items: flex-start;
   width: 70%;
-  height: 80%;
+  height: 100%;
   padding: 40px;
 
   @media (max-width: 768px) {

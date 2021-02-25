@@ -55,6 +55,10 @@ const Description = styled.p`
   font-size: 14px;
   font-family: "Coda Caption", sans-serif;
   color: #f3e4d4;
+
+  @media (max-width: 1040px) {
+    padding-bottom: 40px;
+  }
 `;
 
 export default HomepageTitle;
