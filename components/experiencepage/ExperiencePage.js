@@ -1,24 +1,51 @@
 import styled from "styled-components";
 
+import Link from "next/link";
+
+import ExperiencePiece, {
+  Experience,
+  ExperienceTitle,
+} from "./ExperiencePiece";
+
+import { useState } from "react";
+
 function ExperiencePage() {
+  const [display, setDisplay] = useState(false);
+
   return (
     <ExperienceStyled>
       <Title>Experience</Title>
       <ExperienceContainer>
-        <ExperienceTop>
-          <ExperienceTitle>The Online Sidekick</ExperienceTitle>
-        </ExperienceTop>
-        <Experience>
-          <ExperienceTitle>The Funkasphere</ExperienceTitle>
-        </Experience>
-        <Experience>
-          <ExperienceTitle>JM Design &#38; Joinery</ExperienceTitle>
-        </Experience>
-        <Experience>
-          <ExperienceTitle>
-            Stop Point Records &#38; Distribution
-          </ExperienceTitle>
-        </Experience>
+        <Link href="https://theonlinesidekick.com/" passHref={true}>
+          <ExperienceTop>
+            <ExperienceTitle
+              onMouseEnter={() => setDisplay(true)}
+              onMouseLeave={() => setDisplay(false)}
+            >
+              The Online Sidekick
+              {display && (
+                <p>
+                  The Online Sidekick is a virtual assistant business. They
+                  needed a trendy website which would reflect their target
+                  market. I created the logo, website and copy. It was built
+                  using React, NextJS and Styled-Components.
+                </p>
+              )}
+            </ExperienceTitle>
+          </ExperienceTop>
+        </Link>
+        <Link href="https://thefunkasphere.com/" passHref={true}>
+          <a>
+            <ExperiencePiece
+              title="The Funkasphere"
+              paragraph="The Funkasphere is a funk podcast that dives into world music influences. I used React-Three-Fiber, React and Styled Components to build this site."
+            />
+          </a>
+        </Link>
+        <ExperiencePiece
+          title="JM Design &#38; Joinery"
+          paragraph="JM Design &#38; Joinery is an upmarket firm that builds bespoke pieces for people with carpentry needs. I designed their logo, wrote the copy and built the website using React, NextJS and Styled-Components."
+        />
       </ExperienceContainer>
       <ButtonContainer>
         <GithubButton>Github</GithubButton>
@@ -53,38 +80,31 @@ const ExperienceContainer = styled.div`
 
 const ExperienceTop = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px;
   width: 100%;
   height: 100px;
   border-top: solid 1px #f2f9ff;
   border-bottom: solid 1px #f2f9ff;
+  cursor: pointer;
 
   :hover {
     background: rgb(255, 255, 255, 0.2);
     transition: 0.5s;
   }
-`;
 
-const Experience = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  width: 100%;
-  height: 100px;
-  border-bottom: solid 1px #f2f9ff;
+  p {
+    font-family: "Coda", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    color: white;
 
-  :hover {
-    background: rgb(255, 255, 255, 0.2);
-    transition: 0.5s;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
-`;
-
-const ExperienceTitle = styled.h2`
-  font-family: "Coda", sans-serif;
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
 `;
 
 const ButtonContainer = styled.div`
