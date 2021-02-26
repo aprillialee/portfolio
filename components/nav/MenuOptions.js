@@ -114,7 +114,7 @@ function MenuOptions({ open }) {
             />
             <path
               d="M0.5 1H16.5M0.5 1L7.81606 7.85881C8.20072 8.21942 8.79928 8.21942 9.18394 7.8588L16.5 1M0.5 1V12.5C0.5 13.0523 0.947715 13.5 1.5 13.5H15.5C16.0523 13.5 16.5 13.0523 16.5 12.5V1"
-              stroke="#200F59"
+              stroke="#b1c8fc"
             />
           </svg>
         </MenuOption>
@@ -154,7 +154,7 @@ function MenuOptions({ open }) {
 const MenuOptionsStyled = styled.ul`
   width: 100px;
   height: 100vh;
-  background: #200f59;
+  background: #b1c8fc;
   list-style: none;
   display: ${({ open }) => (open ? "" : "none")};
 `;

@@ -31,7 +31,7 @@ const BurgerStyled = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: ${({ open }) => (open ? "#200f59" : "")};
+  background: ${({ open }) => (open ? "#b1c8fc" : "")};
 `;
 
 const DIVS = styled.div`

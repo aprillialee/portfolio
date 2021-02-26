@@ -1,3 +1,5 @@
+import ExperiencePage from "../components/experiencepage/ExperiencePage";
+
 export default function Experience() {
-  return <h1>HELLO</h1>;
+  return <ExperiencePage>HELLO</ExperiencePage>;
 }
