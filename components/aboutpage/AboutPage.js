@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
+import { Title } from "../styledcomponents/Styled";
+
 function AboutPage() {
   return (
     <AboutPageStyled>
-      <AboutMe>About Me</AboutMe>
+      <Title>About Me</Title>
       <Paragraph>Hello, I'm Aprillia and I'm a front-end developer.</Paragraph>
       <Paragraph>
         While I spend most of my time working with React, I also enjoy 3D
@@ -78,13 +80,6 @@ const AboutPageStyled = styled.div`
   }
 `;
 
-const AboutMe = styled.h1`
-  font-size: 40px;
-  color: #2b2b22;
-  font-family: "Coda Caption", sans-serif;
-  margin: 0;
-`;
-
 const SkillsTitle = styled.h2`
   font-size: 30px;
   color: #2b2b22;
@@ -113,7 +108,7 @@ const Skill = styled.li`
 `;
 
 const Paragraph = styled.p`
-  margin: 10px 0px 0px 0px;
+  margin: 0px 0px 5px 0px;
   font-size: 18px;
   color: #f3e4d4;
   font-family: "Coda", sans-serif;

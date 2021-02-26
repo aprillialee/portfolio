@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 import Link from "next/link";
 
+import { Title, Button } from "../styledcomponents/Styled";
+
 import ExperiencePiece, {
   Experience,
   ExperienceTitle,
@@ -48,9 +50,9 @@ function ExperiencePage() {
         />
       </ExperienceContainer>
       <ButtonContainer>
-        <GithubButton>Github</GithubButton>
-        <GithubButton>Instagram</GithubButton>
-        <GithubButton>Medium</GithubButton>
+        <Button>Github</Button>
+        <Button>Instagram</Button>
+        <Button>Medium</Button>
       </ButtonContainer>
     </ExperienceStyled>
   );
@@ -64,13 +66,6 @@ const ExperienceStyled = styled.div`
   width: 100%;
   height: 100%;
   padding: 40px;
-`;
-
-const Title = styled.div`
-  font-size: 40px;
-  color: #2b2b22;
-  font-family: "Coda Caption", sans-serif;
-  margin: 0px 0px 20px 0px;
 `;
 
 const ExperienceContainer = styled.div`
@@ -114,23 +109,4 @@ const ButtonContainer = styled.div`
   height: 100%;
 `;
 
-const GithubButton = styled.button`
-  margin-right: 5%;
-  width: 15%;
-  height: 50px;
-  font-family: "Coda", sans-serif;
-  color: white;
-  font-size: 16px;
-  border: 1px solid white;
-  background: none;
-
-  :hover {
-    background: rgb(255, 255, 255, 0.2);
-    transition: 0.5s;
-  }
-
-  @media (max-width: 768px) {
-    width: 40%;
-  }
-`;
 export default ExperiencePage;
