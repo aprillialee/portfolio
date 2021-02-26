@@ -128,5 +128,9 @@ const GithubButton = styled.button`
     background: rgb(255, 255, 255, 0.2);
     transition: 0.5s;
   }
+
+  @media (max-width: 768px) {
+    width: 40%;
+  }
 `;
 export default ExperiencePage;

@@ -154,7 +154,7 @@ function MenuOptions({ open }) {
 const MenuOptionsStyled = styled.ul`
   width: 100px;
   height: 100vh;
-  background: #b1c8fc;
+  background: linear-gradient(#b0cafd, #7ab5f7);
   list-style: none;
   display: ${({ open }) => (open ? "" : "none")};
 `;

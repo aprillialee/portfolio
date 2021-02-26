@@ -37,6 +37,10 @@ export const Experience = styled.div`
     font-size: 16px;
     margin: 0;
     color: white;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 `;
 

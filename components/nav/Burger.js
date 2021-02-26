@@ -31,7 +31,7 @@ const BurgerStyled = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: ${({ open }) => (open ? "#b1c8fc" : "")};
+  background: ${({ open }) => (open ? "#b0cafd" : "")};
 `;
 
 const DIVS = styled.div`
@@ -43,7 +43,7 @@ const DIVS = styled.div`
     height: 5px;
     background: #f3e4d4;
     border-radius: 2px;
-    border: 1px solid #200f59;
+    border: 1px solid #b2e1ff;
   }
 
   div:nth-child(2) {
