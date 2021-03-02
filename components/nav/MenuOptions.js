@@ -145,6 +145,7 @@ const MenuOptionImg = styled.li`
   height: 25px;
   margin-bottom: 50px;
   cursor: pointer;
+  padding-top: 20px;
 
   img {
     width: 100%;
