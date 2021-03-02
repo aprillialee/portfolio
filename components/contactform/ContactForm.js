@@ -20,7 +20,7 @@ function ContactForm() {
             name="message"
             placeholder="Enter your message here :)"
           />
-          <Button>Send</Button>
+          <Button type="submit">Send</Button>
         </ContactArea>
         <SocialContainer>
           <Text>
