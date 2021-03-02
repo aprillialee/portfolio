@@ -39,7 +39,7 @@ export const Experience = styled.div`
     color: white;
 
     @media (max-width: 768px) {
-      font-size: 12px;
+      display: none;
     }
   }
 `;

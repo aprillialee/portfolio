@@ -128,7 +128,7 @@ const ReachOut = styled.p`
   -webkit-text-stroke: 1px white;
 
   @media (max-width: 1040px) {
-    margin: 5px 0px 0px 0px;
+    margin-top: 30px;
     font-size: 15px;
   }
 `;
