@@ -129,7 +129,6 @@ const MenuOptionsStyled = styled.ul`
 `;
 
 const MenuOption = styled.li`
-  padding-top: 20px;
   height: 80px;
   width: 100px;
   cursor: pointer;
@@ -145,7 +144,6 @@ const MenuOptionImg = styled.li`
   height: 25px;
   margin-bottom: 50px;
   cursor: pointer;
-  padding-top: 20px;
 
   img {
     width: 100%;
