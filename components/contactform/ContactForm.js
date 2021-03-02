@@ -3,9 +3,6 @@ import styled from "styled-components";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.min.css";
-
 import { Title, Button } from "../styledcomponents/Styled";
 
 import Link from "next/link";
