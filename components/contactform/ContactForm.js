@@ -1,27 +1,76 @@
 import styled from "styled-components";
 
+import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
+
 import { Title, Button } from "../styledcomponents/Styled";
 
 import Link from "next/link";
 
 function ContactForm() {
+  const { register, errors, handleSubmit, reset } = useForm();
+
+  const onSubmit = async (data) => {
+    try {
+      const templateParams = {
+        name: data.name,
+        email: data.email,
+        message: data.message,
+      };
+      await emailjs.send(
+        "service_qfg9rr3",
+        "template_7ff53ae",
+        templateParams,
+        "user_3KNDOtg1d4XYD4P6pJZ9I"
+      );
+      reset();
+      alert("Message Submitted");
+    } catch (e) {
+      console.log(e);
+    }
+  };
   return (
     <ContactFormStyled>
       <Title>Contact Me</Title>
       <ContactAreaContainer>
-        <ContactArea>
-          <NameArea>
-            <Name type="text" name="firstName" placeholder="First Name" />
-            <Name type="text" name="lastName" placeholder="Last Name" />
-          </NameArea>
-          <Email type="text" name="email" placeholder="Email" />
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <Name
+            type="text"
+            name="name"
+            placeholder="Name"
+            ref={register({
+              required: { value: true, message: "Please enter your name" },
+            })}
+          />
+          {errors.name && <span>{errors.name.message}</span>}
+          <Email
+            type="text"
+            name="email"
+            placeholder="Email"
+            ref={register({
+              required: true,
+              pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+            })}
+          />
+          {errors.email && <span>Please enter a valid email address</span>}
           <Message
             type="text"
             name="message"
             placeholder="Enter your message here :)"
+            ref={register({
+              required: { value: true, message: "Please enter a subject" },
+              maxLength: {
+                value: 200,
+                message: "Subject cannot exceed 200 characters",
+              },
+            })}
           />
+          {errors.subject && <span>{errors.subject.message}</span>}
           <Button type="submit">Send</Button>
-        </ContactArea>
+        </form>
         <SocialContainer>
           <Text>
             Send me a message and say hello <br />
@@ -65,7 +114,6 @@ function ContactForm() {
                 <g id="Logo_1_">
                   <path
                     id="white_background"
-                    class="st0"
                     d="M221.95,51.29c0.15,2.17,0.15,4.34,0.15,6.53c0,66.73-50.8,143.69-143.69,143.69v-0.04
 		C50.97,201.51,24.1,193.65,1,178.83c3.99,0.48,8,0.72,12.02,0.73c22.74,0.02,44.83-7.61,62.72-21.66
 		c-21.61-0.41-40.56-14.5-47.18-35.07c7.57,1.46,15.37,1.16,22.8-0.87C27.8,117.2,10.85,96.5,10.85,72.46c0-0.22,0-0.43,0-0.64
@@ -98,28 +146,20 @@ const ContactAreaContainer = styled.div`
   flex-direction: row;
   width: 95%;
   height: 95%;
-`;
 
-const ContactArea = styled.form`
-  height: 500px;
-  width: 50%;
+  form {
+    height: 550px;
+    width: 50%;
 
-  @media (max-width: 768px) {
-    width: 100%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 `;
 
-const NameArea = styled.div`
-  display: flex;
+const Name = styled.input`
   width: 100%;
   height: 10%;
-  flex-direction: row;
-  justify-content: space-between;
-`;
-
-const Name = styled.input`
-  width: 48%;
-  height: 100%;
   background: rgb(255, 255, 255, 0.2);
   border: 1px solid white;
   padding: 20px;
