@@ -129,9 +129,15 @@ const MenuOptionsStyled = styled.ul`
 `;
 
 const MenuOption = styled.li`
+  padding-top: 20px;
   height: 80px;
   width: 100px;
   cursor: pointer;
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
 `;
 
 const MenuOptionImg = styled.li`
