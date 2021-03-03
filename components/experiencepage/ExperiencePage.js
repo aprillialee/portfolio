@@ -48,7 +48,7 @@ function ExperiencePage() {
           <a>
             <ExperiencePiece
               title="JM Design &#38; Joinery"
-              paragraph="JM Design &#38; Joinery is an upmarket firm that builds bespoke pieces for people with carpentry needs. I designed their logo, wrote the copy and built the website using React, NextJS and Styled-Components."
+              paragraph="(Not 100% complete) JM Design &#38; Joinery is an upmarket firm that builds bespoke pieces for people with carpentry needs. I designed their logo, wrote the copy and built the website using React, NextJS and Styled-Components. I am currently still working on this project"
             />
           </a>
         </Link>
