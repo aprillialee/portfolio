@@ -44,10 +44,14 @@ function ExperiencePage() {
             />
           </a>
         </Link>
-        <ExperiencePiece
-          title="JM Design &#38; Joinery"
-          paragraph="JM Design &#38; Joinery is an upmarket firm that builds bespoke pieces for people with carpentry needs. I designed their logo, wrote the copy and built the website using React, NextJS and Styled-Components."
-        />
+        <Link href="https://jm-design-joinery.vercel.app/" passHref={true}>
+          <a>
+            <ExperiencePiece
+              title="JM Design &#38; Joinery"
+              paragraph="JM Design &#38; Joinery is an upmarket firm that builds bespoke pieces for people with carpentry needs. I designed their logo, wrote the copy and built the website using React, NextJS and Styled-Components."
+            />
+          </a>
+        </Link>
       </ExperienceContainer>
       <ButtonContainer>
         <Button>Github</Button>
